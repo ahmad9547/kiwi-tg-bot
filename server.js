@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const cors = require('cors');
 
 const app = express();
-const token = '7795817164:AAH4SZIdmlJGhXvMiLjYBaDKGqEGm1or9JE'; // Use environment variable
+const token = ''; // Use environment variable
 const bot = new TelegramBot(token, { polling: true });
 
 const gameUrl = 'https://g-verse.netlify.app/';

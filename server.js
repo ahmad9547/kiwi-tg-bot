@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const cors = require('cors');
 
 const app = express();
-const token = ''; // Use environment variable
+const token = '7795817164:AAH4SZIdmlJGhXvMiLjYBaDKGqEGm1or9JE'; // Use environment variable
 const bot = new TelegramBot(token, { polling: true });
 
 const gameUrl = 'https://g-verse.netlify.app/';
@@ -66,7 +66,7 @@ bot.onText(/\/start/, (msg) => {
                 inline_keyboard: [
                     [
                         {
-                            text: 'Play G-Verse!',
+                            text: 'Play X-Planet!',
                             web_app: { url: gameUrlWithUserId } // Use the URL with the userid
                         }
                     ]
@@ -98,7 +98,7 @@ bot.onText(/\/play/, (msg) => {
                 inline_keyboard: [
                     [
                         {
-                            text: 'Play G-Verse!',
+                            text: 'Play X-Planet!',
                             web_app: { url: gameUrlWithUserId } // Use the URL with the userid
                         }
                     ]

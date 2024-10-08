@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const cors = require('cors');
 
 const app = express();
-const token = ''; // Use environment variable
+const token = process.env.API_KEY; // Use environment variable
 const bot = new TelegramBot(token, { polling: true });
 
 const gameUrl = 'https://g-verse.netlify.app/';
@@ -118,7 +118,7 @@ app.get('/', (req, res) => {
     res.send('Server is running');
 });
 
-const PORT = 4545;
+const PORT = 4444;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

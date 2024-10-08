@@ -66,7 +66,7 @@ bot.onText(/\/start/, (msg) => {
                 inline_keyboard: [
                     [
                         {
-                            text: 'Play X-Planet!',
+                            text: 'Play X-Plannet!',
                             web_app: { url: gameUrlWithUserId } // Use the URL with the userid
                         }
                     ]

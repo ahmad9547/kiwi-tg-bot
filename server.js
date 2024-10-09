@@ -61,6 +61,8 @@ bot.onText(/\/start/, (msg) => {
         const userId = msg.from.id;
         const gameUrlWithUserId = `${gameUrl}?user_id=${encodeURIComponent(userId)}&referral_id=${encodeURIComponent(referralId)}`;
 
+        console.log(gameUrlWithUserId);
+
         bot.sendMessage(chatId, 'Welcome to Test Bot! Click the below buttons to play the games!', {
             reply_markup: {
                 inline_keyboard: [
